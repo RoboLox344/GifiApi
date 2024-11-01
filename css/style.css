@@ -1,0 +1,704 @@
+@font-face {
+    font-family: 'JuleeRegular';
+    src: url('font/JuleeRegular.eot');
+    src: url('/font/JuleeRegular.woff2') format('woff2'),
+         url('/font/JuleeRegular.woff') format('woff');
+    
+}
+body{
+ font-family: 'JuleeRegular';
+ background-color: #ABA7A7;
+}
+.container{
+    width: 100%;
+    max-width:  1560px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    padding:  0 20px;
+    box-sizing: border-box;
+    transition: opacity 500ms ease-in-out, transform 500ms ease-in-out; 
+   
+
+}
+.container-first{
+    margin-top: 40px;
+    
+}
+:root{
+    --main-color:#0D1115;
+    --main-color-white:#fff;
+    --main-text-colo-light:#0D1115;
+    --supportive-color:#7880B5;
+    --decorative-color:#F6D863;
+    --main-text-color:#fff;
+    --supp-text-color:#A9A4A4;
+    --bg-shadow-statick-color:#393939;
+    --bg-shadow-hover-color:#555555;
+} 
+.container-header{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 26px;
+    justify-content: space-between;
+    
+    
+}
+.chax-wp{
+    max-width: 1800px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.chax-main-wp{
+    z-index: 10000;
+    padding: 100px;
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+@keyframes Space{
+    0%{
+        box-shadow:  10px 0px 10px var(--bg-shadow-statick-color);
+    }
+    25%{
+        box-shadow:  0px 10px 20px var(--bg-shadow-hover-color);
+    }
+    50%{
+        box-shadow:  -10px 0px 25px var(--bg-shadow-hover-color);
+    }
+    75%{
+        box-shadow:  0px -10px 20px var(--bg-shadow-hover-color);
+    }
+    100%{
+        box-shadow:  10px 0px 10px var(--bg-shadow-statick-color);
+    }
+}
+.chax-board-wp{
+    
+    display:grid ;
+    grid-template-columns: repeat(8, 1fr);
+    min-height: 100px;
+    max-width: 800px;
+    width: 100%;
+    box-shadow:  0px 0px 10px var(--bg-shadow-statick-color);
+    transition:  box-shadow 300ms ease-in-out;
+    animation-duration: 10s;
+    min-height: 800px;
+    animation-name:  Space;
+    animation-iteration-count: infinite;
+}
+.logo{
+    width: 897px;
+    max-width: 897px;
+    min-height: 163px;
+    padding: 26px 29px;
+    box-sizing: border-box;
+    border-radius: 46px;
+    background-color: #181818;
+    
+}
+.sector-item{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100px;
+    width: 100%;
+    height: 100px;
+    outline: 2px solid #252525;
+}
+
+.svg-decor-ferst{
+    position: absolute;
+    left: 100px;
+    width: 400px;
+    height: 400px;
+    top: 50%;
+    transform: rotate(-15deg) translateY(-60%);
+    z-index: 2;
+}
+.svg-decor-second{
+    position: absolute;
+    left: 300px;
+    width: 200px;
+    height: 200px;
+    top: 50%;
+    transform: rotate(10deg) translateY(-40%);
+    z-index: 1;
+}
+.svg-decor-3{
+    position: absolute;
+    right: 10px;
+    width: 500px;
+    height: 500px;
+    top: 50%;
+    transform:translateY(-60%);
+    z-index: 3;
+}
+.svg-decor-p3, .svg-decor-p2, .svg-decor-p1{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform:translateY(-40%);
+    width: 200px;
+    height: 200px;
+}
+.svg-decor-p3{
+    right: 80px;
+}
+.svg-decor-p2{
+    width: 206px;
+    height: 206px;
+    transform:translateY(-35%);
+    z-index: 2;
+}
+.seiz-sh{
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    transition: transform 300ms ease-in-out;
+}
+.sector-item:hover .seiz-sh{
+    transform:rotate3d(1, 1, 4, 0deg);
+}
+.bishopW, .bishopB,.queenW, .queenB, .kingB, .kingW{
+    width: 90px;
+    height: 70px;
+}
+.svg-decor-p1{
+    right: 300px;
+    width: 240px;
+    height: 240px;
+    transform:translateY(-30%);
+}
+.sector-black{
+    background-color: #170829;
+}
+.sector-white{
+    background-color: #71667E;
+}
+.local{
+    padding: 26px 29px;
+    width: 540px;
+    max-width: 540px;
+    min-height: 163px;
+    box-sizing: border-box;
+    border-radius: 46px;
+    background-color: #181818;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    
+}
+.container-uslugi{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    gap:30px;
+    list-style-type: none;
+    justify-content: space-between;
+}
+.date-wp{
+    position: relative;
+    color: #fff;
+    font-weight: 600;
+    border: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #181818;
+    transition: color 300ms ease-in-out, background-color 300ms ease-in-out;
+    cursor: pointer;
+}
+.date-wp:hover{
+    background-color: #899285;
+    color:#181818;
+}
+.boreder-left{
+    border-top-left-radius: 10px;
+}
+.boreder-rt{
+    border-top-right-radius: 10px;
+}
+.boreder-rt-bt{
+    border-bottom-right-radius: 10px;
+}
+.boreder-left-bt{
+    border-bottom-left-radius: 10px;
+}
+.bron{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    z-index: 2;
+}
+.svg-size{
+    height: 25px;
+    width: 25px;
+}
+.left-item{
+    border-left: 0px ;
+}
+.top-item{
+    border-top: 0;
+}
+.rt-item{
+    border-right: 0;
+}
+.bt-item{
+    border-bottom: 0;
+}
+
+.gif-saersh-button{
+    min-height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #899285;
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    max-width: 200px;
+}
+.uslugi-list{
+    position: relative;
+    width: 100%;
+    max-width: 469px;
+    min-height: 420px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    overflow: hidden;
+    border-radius: 46px;
+    
+    transition: opacity 500ms ease-in-out, transform 500ms ease-in-out, box-shadow 400ms ease-in-out ; 
+    box-shadow: 10px 10px 10px rgba(148, 148, 148, 0.4);
+}
+.uslugi-list:hover{
+    box-shadow: 0px 10px 10px rgba(24, 24, 24, 0.4);
+}
+.form-wp{
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid lavenderblush;
+    border-radius: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    background-color: indianred;
+}
+.form-input-wp{
+    background-color: darkorange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+}
+.btn-wp{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.gif-wp{
+    min-height: 200px;
+    max-width: 200px;
+    width: 100%;
+}
+.content-wp{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.gif-size{
+    width: 200px;
+    height: 200px;
+    min-height: 200px;
+    max-width: 200px;
+}
+.opisnie-tatto{
+    width: 100%;
+    min-height: 307px;
+    margin: 0;
+    padding: 52px 28px;
+    box-sizing: border-box;
+    border-top-left-radius: 46px;
+    border-top-right-radius:46px ;
+    background-color: #181818;
+}
+.footer-opsinaie-tatto{
+    width: 100%;
+    min-height: 113px;
+    display: flex;
+    align-items: center;
+    
+    border-radius:0 0 46px 46px;
+    background-color: #ABA7A7;
+    box-shadow: 0px 10px 10px rgba(24, 24, 24, 0.4);
+}
+/* .footer-opsinaie-tatto:hover{
+    .mascot{
+        transition: 3s;
+        transform: scale(0.9);
+    }
+} */
+
+.text-uslugi{
+    margin: 0;
+    margin-bottom: 17px;
+    font-size: 32px;
+    color: #fff;
+    font-weight: 400;
+    line-height: 38px;
+    letter-spacing: 0.1em;
+
+}
+.soc-seti{
+    max-width: 258px;
+    width: 100%;
+    min-height: 76px;
+    margin: 0;
+    margin-bottom: 116px;
+    font-size: 32px;
+    color: #fff;
+    font-weight: 400;
+    line-height: 38px;
+    letter-spacing: 0.1em;
+}
+.style-text-about{
+    color: #000;
+}
+.text-tattoo{
+    max-width: 411px;
+    width: 100%;
+    min-height: 105px;
+    margin: 0;
+    margin-bottom: 17px;
+    font-size: 24px;
+    line-height: 10px;
+    color: #fff;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.1em;
+
+}
+.text-tattoo-about{
+    min-width: 280px;
+    color: #000;
+}
+.text-price{
+    min-height: 28px;
+    font-size: 24px;
+    color: #fff;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    line-height: 28px;
+}
+.links-tatto{
+    max-width: 150px;
+    width: 100%;
+    height: 45px;
+    margin: 0;
+    margin-left: 67px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    font-size: 24px;
+    color: #000;
+    text-decoration: none;
+    border: 3px solid #181818;
+    transition:background-color 300ms ease-in-out ;
+}
+.links-tatto:hover{
+    background-color: #908D8D;
+}
+.links-tatto:focus{
+    background-color: #908D8D;
+}
+.mascot{
+    position: absolute;
+    bottom: 0;
+    right: -10px;
+    max-width: 220px;
+    width: 100%;
+    min-width: 220px;
+    scale: 1;
+}
+
+.uslugi-list-about-me{
+    width: 469px;
+    max-width: 469px;
+    min-height: 420px;
+    padding: 52px 29px 39px;
+    border-radius: 46px;
+    box-sizing: border-box;
+    background-color: #DD7979;
+    
+}
+.container-footer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+
+}
+.block-1{
+    width: 100%;
+    max-width: 1120px;
+    min-height: 534px;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 30px;
+    
+}
+.footer-seti{
+    width: 100%;
+    max-width: 312px;
+    min-height: 534px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   justify-content: center;
+    border-radius: 46px;
+    background-color: #181818;
+}
+.inst{
+    display: inline-block;
+    width: 100%;
+    min-height: 44px;
+    margin:0;
+    margin-bottom: 40px;
+    padding-left:50px;
+    text-decoration:none;
+    font-size: 26px;
+    line-height: 10px;
+    color: #fff;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.1em;
+    background-image: url("../img/inst.svg");
+    background-size: 44px;
+    background-position: left center;
+    background-repeat: no-repeat; 
+}
+.telegram{
+    display: inline-block;
+    min-height: 44px;
+    width: 100%;
+    margin:0;
+    padding: 0;
+    padding-left:50px;
+    text-decoration: none;
+    font-size: 26px;
+    
+    line-height: 10px;
+    color: #fff;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.1em;
+    background-image: url("../img/telega.svg");
+    background-size: 44px;
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+.inst , .telegram{
+    display: flex;
+    align-items: center;
+}
+.work-sketch{
+    width: 100%;
+    min-height: 130px;
+    display: flex;
+    flex-wrap: wrap;
+    gap:30px;
+
+}
+.my-work{
+    width: 544px;
+    max-width: 544px;
+    min-height: 130px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 46px;
+    background-color: #181818;
+
+}
+.free-sketch{
+    width: 544px;
+    max-width: 544px;
+    min-height: 130px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 46px;
+    background-color: #181818;
+}
+.text-wk-sk-heading{
+    margin: 0;
+    font-size: 40px;
+    color: #fff;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    line-height: 28px;
+}
+.see{
+    max-width: 172px;
+    width: 100%;
+    min-height: 46px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: #000;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    line-height: 28px;
+    text-decoration: none;
+    border-radius: 15px;
+    background-color: #ABA7A7;
+    transition:background-color 300ms ease-in-out ;
+
+}
+.see:hover{
+    background-color: #908D8D;
+}
+.see:focus{
+    background-color: #908D8D;
+}
+.otzivi{
+    max-width: 1120px;
+    width: 100%;
+    min-height: 376px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    gap: 56px;
+    border-radius: 46px;
+    background-color: #899285;
+}
+.otzivi-block{
+    max-width: 261px;
+    width: 100%;
+    min-height: 288px;
+    padding: 18px 36px;
+    box-sizing: border-box;
+    
+    border-radius: 20px;
+    background-color: #778073;
+}
+.text-otvivi{
+    max-width:189px;
+    min-height: 252px;
+   
+    display: inline-block;
+    margin: 0;
+    
+}
+.media{
+max-width: 258px;
+width: 100%;
+min-height: 44px;
+display: flex;
+align-items: center;
+
+}
+.text-otvivi{
+    margin: 0;
+    color: #fff;
+    font-size: 32px;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    line-height: 28px;
+}
+.container-mywork{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap:27px;
+    list-style: none;
+    justify-content: center;
+}
+.my-work-foto{
+    width: 100%;
+    max-width: 468px;
+    min-height: 638px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 500ms ease-in-out, transform 500ms ease-in-out; 
+    border-radius: 46px;
+    background-color:#181818;
+}
+.foto-container{
+    width: 100%;
+    max-width: 273px;
+    margin: 0;
+    margin-bottom: 14px;
+    height: 430px;
+    overflow: hidden;
+    border-radius: 62px;
+    border: 3px solid #899285;
+}
+.size-foto:hover{
+    
+        
+        transform: scale(1.3);
+    
+}
+.round-move{
+    position: absolute;
+    top: 50%;
+    width: 30px;
+    height: 30px;
+    left: 50%;
+    transform:  translate(-50%, -50%);
+    background-color: var(--supportive-color);
+    border-radius: 100px;
+}
+
+.size-foto{
+    width: 100%;
+    height: 100%;
+    min-height:430px ;
+    transition: transform 700ms ease-in-out;
+}
+.name-foto{
+    display: flex;
+    align-items: center;
+    min-height: 100px;
+    text-align: center;
+    margin: 0;
+    font-size: 92px;
+    color: #fff;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+
